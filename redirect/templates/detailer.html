@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Details</title>
+	<style type="text/css">
+		body{
+			padding-top: 50px;
+			background-color: #ececec;
+			font-family: "Verdana";
+			font-weight: bolder;
+			text-align: center;
+		}
+		html, body {
+			margin: 0;
+			width: 100%;
+			height: 100%;
+		}
+		@import url(https://fonts.googleapis.com/css?family=Josefin+Slab:100,300,400,600,700);
+		a.button{
+			display: inline-block;
+  		line-height: 50px;
+  		color: #FFF;
+  		padding: 0 10px;
+  		border-radius: 5px;
+  		transition: all 0.2s ;
+  		text-decoration:none;
+  	}
+		.btnBlueGreen {
+  		background: #00AE68;
+		}
+		.btnFade.btnBlueGreen:hover {
+  		background: #21825B;
+		}
+</style>
+</head>
+<body>
+	<p>Name : {{obj.name}}</p>
+	<p>Email : {{obj.email}}</p>
+	<p>Phone : {{obj.phone}}</p>
+	<p>ID : {{obj.pk}} </p>
+	<a title="Button fade blue/green" class="button btnFade btnBlueGreen" href="{% url 'rand' %}">Generate</a>
+</body>
+</html>

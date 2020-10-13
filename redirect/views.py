@@ -23,5 +23,5 @@ def redi_by_view(request,pk):
 	return redirect(details,pk)
 
 def rand(request):
-	pk = randint(0,49)
+	pk = randint(0,2000)
 	return redirect('detail',pk)
